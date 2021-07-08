@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./correccion.css">
+    <script async src="./correccion.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Corrección fetch</title>
+</head>
+<body>
+    <div class="header-container">
+        <header class="header">
+            <form class="form">
+                <input class="form-input" name="buscar" type="text" placeholder="Ingrese un producto">
+                <button class="form-button">BUSCAR</button>
+            </form>
+        </header>
+        <section class="results-container-resolution">
+            <div class="results-container">
+                <p class="results-count">Resultados: <span class="results-count-num"></span></p>
+                <div class="results-items">
+                    
+                </div>
+                
+                <template id="result-template">
+                <div class="result-item">
+                    <div class="result-item-img-container">
+                        <img class="result-item-img" src="" alt="">
+                    </div>
+                    <div class="result-item-info-container">
+                        <div class="result-name-condition-container">
+                            <h3 class="result-name"></h2>
+                            <h3 class="result-condition"></h3>
+                        </div>
+                        <div class="quantity-solds-container">
+                            <h3 class="quantity-solds">Vendidos: <span class="quantity-solds-num"></span></h3>
+                        </div>
+                    </div>
+                    <div class="result-item-price-container">
+                        <h3 class="price-num"></h3>
+                    </div>
+                </div>
+            </div>
+            </template>
+        </section>
+</body>
+</html>
